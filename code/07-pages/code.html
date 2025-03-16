@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO: -->
+
+    <!-- 
+    TODO:
+    - (Go to https://www.ogp.me for info on Open Graph Protocol)
+    - Elaborate on all SEO 
+    -->
+
+    <title>Ben Wylie Home</title>
+    <meta name="description" content="Desinger, Musician, etc..." />
+    <meta porperty="og:title" content="Ben Wylie" />
+    <meta porperty="og:description" content="Desinger, Musician, etc..." />
+    <meta porperty="og:type" content="website" />
+    <meta porperty="og:image" content="http://..." />
+    <meta porperty="og:url" content="https://..." />
+
+    <!-- FONTS: -->
+
+    <!-- 
+    TODO: 
+    - Import the correct fonts 
+    -->
+
+    <!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    /> 
+    -->
+
+    <!-- STYLESHEETS: -->
+
+    <link rel="stylesheet" href="../01-main/main.css" />
+  </head>
+
+  <body class="pallet07">
+    <!-- NAVIGATION -->
+
+    <section class="block">
+      <div class="navigation">
+        <div class="grid grid--1x5">
+          <div style="background: var(--color-primary)">
+            <a href="home.html">
+              <img src="../../images/Brushes/BrushSmall 01 002.webp" alt="" />
+            </a>
+          </div>
+          <div style="background: var(--color-secondary)"></div>
+          <div style="background: var(--color-tertiary)"></div>
+          <div style="background: var(--color-background)"></div>
+          <div style="background: var(--color-accent)">
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+    TODO:  
+    - Make an svg logo 
+    -->
+
+    <!-- HERO -->
+
+    <!-- 
+    TODO: 
+    - complete your banner source set
+    -->
+
+    <section class="block">
+      <div class="parallax-container">
+        <div class="parallax-layer" data-speed="0.05">
+          <img src="../../images/heros/home/Space_01.webp" />
+        </div>
+
+        <div class="parallax-layer" data-speed="0.2">
+          <img src="../../images/heros/home/Swirls_01.webp" />
+        </div>
+
+        <div class="parallax-layer" data-speed="0.3">
+          <div class="canvas-container">
+            <canvas
+              class="canvas-item pallet07"
+              data-color-source="accent"
+            ></canvas>
+            <img
+              class="source-image"
+              src="../../images/Brushes/Brush 07 002.webp"
+              style="display: none"
+            />
+          </div>
+        </div>
+
+        <div class="parallax-layer" data-speed="0.4">
+          <h1 class="parallax-title">B.<br />Wylie</h1>
+        </div>
+
+        <div class="parallax-layer" data-speed="0.6">
+          <img src="../../images/heros/home/Geometry_01.webp" />
+        </div>
+
+        <div class="parallax-layer" data-speed="0.8">
+          <h1 class="parallax-subtitle">Code</h1>
+        </div>
+
+        <div class="parallax-layer" data-speed="1">
+          <img src="../../images/heros/home/Splatter_01.webp" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+
+    <section>
+      <div class="carousel">
+        <div class="carousel-items">
+          <a href="music.html">
+            <div class="carousel-item">
+              <img
+                src="../../images/Brushes/BrushSmallDark 02 002.webp"
+                alt=""
+              />
+              <h1>•Music</h1>
+            </div>
+          </a>
+
+          <a href="film.html">
+            <div class="carousel-item">
+              <img
+                src="../../images/Brushes/BrushSmallDark 03 002.webp"
+                alt=""
+              />
+              <h1>•Film</h1>
+            </div>
+          </a>
+
+          <a href="design.html">
+            <div class="carousel-item">
+              <img
+                src="../../images/Brushes/BrushSmallDark 04 002.webp"
+                alt=""
+              />
+              <h1>•Design</h1>
+            </div>
+          </a>
+
+          <a href="photo.html">
+            <div class="carousel-item">
+              <img
+                src="../../images/Brushes/BrushSmallDark 05 002.webp"
+                alt=""
+              />
+              <h1>•Photo</h1>
+            </div>
+          </a>
+
+          <a href="live.html">
+            <div class="carousel-item">
+              <img
+                src="../../images/Brushes/BrushSmallDark 06 002.webp"
+                alt=""
+              />
+              <h1>•Live</h1>
+            </div>
+          </a>
+
+          <div class="carousel-item carousel-item-selected">
+            <div class="canvas-container">
+              <canvas class="canvas-item" data-color-source="accent"></canvas>
+              <img
+                class="source-image"
+                src="../../images/Brushes/BrushSmallDark 07 002.webp"
+                style="display: none"
+              />
+            </div>
+            <h1>•Code</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTRIES -->
+
+    <section>
+      <div class="block block__pad">
+        <div class="container">
+          <div class="grid grid--1x2 grid--1x3 grid--gap">
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Code - Ben Wylie"
+                data-src="Code Modals/Code - Ben Wylie.html"
+              >
+                <div class="entry--box entry--feature">
+                  <img src="../../Portfolio/Code/Ben Wylie/Entry.webp" alt="" />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Appix Anywhere Corporate Video</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Code - Ben Wylie">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Code Modals/Code - Ben Wylie.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION -->
+
+    <section class="block">
+      <div class="navigation">
+        <div class="grid grid--1x5">
+          <div style="background: var(--color-primary)"></div>
+          <div style="background: var(--color-secondary)"></div>
+          <div style="background: var(--color-tertiary)"></div>
+          <div style="background: var(--color-background)"></div>
+          <div style="background: var(--color-accent)">
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+
+    <script type="module" src="../01-main/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- End -->
+  </body>
+</html>

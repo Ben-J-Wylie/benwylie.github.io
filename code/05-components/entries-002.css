@@ -1,0 +1,104 @@
+/* ENTRIES */
+
+   /* Mobile */
+
+.entry {
+    position: relative; 
+    transition: transform .2s ease-out;
+}
+
+.entry--box {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+    position: relative;
+    background-color: var(--color-background);
+   
+}
+
+/* .entry--multiply {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    
+} */
+
+.entry img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+
+.entry--feature {
+    position: relative; 
+    z-index: 1; 
+    
+}
+
+.entry--feature::before {
+    content: "";
+    background-color: var(--color-accent); 
+    -webkit-mask-image: url("../../images/bookmark.svg");
+    mask-image: url("../../images/bookmark.svg");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -12px;
+    right: -25px;
+    z-index: 2; /* Higher than shadow */
+}
+
+/* Fake shadow using ::after */
+.entry--feature::after {
+    content: "";
+    background-color: black; /* Shadow color */
+    -webkit-mask-image: url("../../images/bookmark.svg");
+    mask-image: url("../../images/bookmark.svg");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -9px;  /* Offset to create depth */
+    right: -27px;
+    z-index: 1; /* Behind the original */
+    opacity: 0.8; /* Shadow transparency */
+    filter: blur(50px); /* Soft shadow effect */
+}
+
+.entry--title {
+    display: inline-block;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    justify-self: center;
+    justify-content: center;
+    text-align: right;
+    overflow: hidden;
+    margin: 10px 0px 0px 0px;
+}
+
+.entry:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* TODO: add text color to these rules */
+

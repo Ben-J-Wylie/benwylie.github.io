@@ -1,0 +1,15 @@
+.canvas-container {
+    width: 100%; /* Matches img width */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    position: relative;
+}
+
+.canvas-item {
+    display: flex;
+    width: 100%; /* Allow natural width */
+    height: auto; /* Allow natural height */
+    /* object-fit: contain; Ensures proper scaling */
+}

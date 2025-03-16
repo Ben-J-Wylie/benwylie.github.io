@@ -1,0 +1,92 @@
+.carousel {
+    width: 100%;
+    height: 140px;
+    padding: 8px 0;
+
+    position: sticky;
+    top: 0; /* Stick to the top of the screen */
+    z-index: 1000; /* Ensures it stays above other content */
+    
+    background: var(--color-background);
+    border-top: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+
+    display: flex;
+    justify-content: space-evenly; /* Align items from the start */
+    gap: 20px;
+    padding: 5px; /* Ensures padding at the edges */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-padding-left: 20px; /* Allows left scrolling */
+    scrollbar-width: none; /* Hide scrollbar */
+    -webkit-overflow-scrolling: touch; /* Improves mobile scrolling */
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.carousel.loaded {
+    visibility: visible;
+    opacity: 1;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on WebKit browsers */
+}
+
+.carousel-items {
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    gap: 20px;
+    min-width: fit-content;
+    margin: auto; /* ✅ Centers by default if smaller than the gallery */
+    justify-content: flex-start;
+}
+
+/* Each item (image + text) */
+.carousel-item {
+    display: flex;
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center align contents */
+    text-align: center;
+    min-width: 200px; /* Adjust size as needed */
+    transition: transform .2s ease-out;
+}
+
+
+.carousel-item:not(.carousel-item-selected):hover {
+    transform: scale(1.05);
+}
+
+
+/* Images should maintain their aspect ratio */
+.carousel-item img,
+.carousel-item .canvas-container {
+    width: 45%; /* Ensures consistency inside the carousel */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+/* Text below each image */
+.carousel-item h1 {
+    margin-top: 8px;
+    white-space: nowrap;
+}
+
+.carousel-item-selected h1 {
+    color: var(--color-accent);
+}
+
+.carousel.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+

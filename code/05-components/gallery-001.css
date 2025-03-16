@@ -1,0 +1,148 @@
+.gallery {
+    width: 100%;
+    height: 300px;
+    background-color: var(--color-primary);
+    display: flex;
+    padding: 10px;
+    overflow-x: auto; /* ✅ Allows scrolling both left and right */
+    overflow-y: hidden;
+    scroll-padding-left: 0; /* ✅ Fixes left scrolling issue */
+    scrollbar-width: none;
+    margin: 10px 0px;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for WebKit browsers */
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-entries {
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    gap: 20px;
+    min-width: fit-content;
+    margin: auto; /* ✅ Centers by default if smaller than the gallery */
+    justify-content: flex-start; /* ✅ Ensures left alignment when overflowing */
+}
+
+
+/* 🔹 Gallery Entry (Wrapper for Images & Videos) */
+.gallery-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Matches gallery height */
+    overflow: hidden; /* Ensures content stays inside */
+    white-space: nowrap; /* Prevent content from breaking */
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+}
+
+
+
+/* Default hover effect (for desktops) */
+.gallery-entry:hover {
+    transform: scale(1.05);
+}
+
+/* Disable hover on touch devices (mobile) */
+@media (hover: none) {
+    .gallery-entry:hover {
+        transform: none !important;
+    }
+}
+
+/* 🔹 Images */
+.gallery-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%; /* Fit gallery height */
+    overflow: visible !important;
+}
+
+/* 🔹 Standard Images */
+.gallery-image img {
+    max-height: 100%; /* Fit within gallery */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+.gallery-image picture {
+    display: flex; /* Ensures it behaves like a block element */
+    height: 100%; /* Matches the parent container */
+    width: auto; /* Ensures the aspect ratio is maintained */
+    justify-content: center; /* Centers content */
+    align-items: center;
+}
+
+.gallery-image picture img {
+    height: 100%; /* Ensures the image fills the available space */
+    width: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Prevents cropping */
+}
+
+/* 🔹 imageLong: Scales Down as Screen Shrinks */
+.gallery-imageLong {
+    align-items: flex-start;
+    width: 100%;
+    max-width: 720px; /* Default max width */
+    overflow: hidden;
+}
+
+/* 🔹 Scale Down `gallery-imageLong` Responsively */
+.gallery-imageLong img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 720px; /* Ensures it never exceeds this */
+}
+
+/* 🔹 Videos */
+.gallery-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%; /* Fit gallery height */
+    overflow: visible !important;
+}
+
+.gallery-video video {
+    height: 100%; /* Fit gallery height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+
+.gallery-feature {
+    position: relative; 
+    z-index: 1; 
+    
+}
+
+
+
+
+/* Pagination Dots */
+.swiper-pagination {
+    bottom: 20px !important; /* Adjust position */
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--color-secondary); /* Default color */
+    opacity: 0.4;
+    transform: scale(.4);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--color-tertiary); /* Change active dot color */
+    opacity: 0.4;
+    transform: scale(.6); /* Enlarge active dot */
+}

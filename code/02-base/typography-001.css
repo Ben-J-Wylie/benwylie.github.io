@@ -1,0 +1,105 @@
+/* TYPOGRAPHY */
+
+/* Mobile */
+
+::selection {
+    background: var(--color-selection);
+    color: var(--color-accent);
+}
+
+html { /* html elements = 16px / 62.5% of 16px = 10px / 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--color-primary);
+    font-family: Monoid, Ubuntu, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    letter-spacing: 1.2rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Keeps it in place */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background);
+    background-image: url(../../images/paper.webp);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1; /* Places it behind everything */
+}
+
+h1, h2, h3 {
+    color: var(--color-primary);
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 0;
+    text-align: right;
+
+}
+
+h1 {
+    font-size: 1.2rem;  
+    text-align: right;
+}
+
+h2 {
+    font-size: 1.1rem;
+    text-align: right;
+    
+}
+
+h3 {
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: .4rem;
+}
+
+p {
+    color: var(--color-primary);
+    text-transform: none;
+    text-align: left;
+    letter-spacing: 0em;
+}
+
+/* of course i need this */
+li {
+    color: var(--color-primary);
+    text-transform: none;
+    text-align: left;
+    letter-spacing: 0.05rem;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Desktop */
+
+/* @media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+} */

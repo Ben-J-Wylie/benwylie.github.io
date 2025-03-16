@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO: -->
+
+    <!-- 
+    TODO:
+    - (Go to https://www.ogp.me for info on Open Graph Protocol)
+    - Elaborate on all SEO 
+    -->
+
+    <title>Ben Wylie Home</title>
+    <meta name="description" content="Desinger, Musician, etc..." />
+    <meta porperty="og:title" content="Ben Wylie" />
+    <meta porperty="og:description" content="Desinger, Musician, etc..." />
+    <meta porperty="og:type" content="website" />
+    <meta porperty="og:image" content="http://..." />
+    <meta porperty="og:url" content="https://..." />
+
+    <!-- FONTS: -->
+
+    <!-- 
+    TODO: 
+    - Import the correct fonts 
+    -->
+
+    <!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    /> 
+    -->
+
+    <!-- STYLESHEETS: -->
+
+    <link rel="stylesheet" href="../01-main/main.css" />
+  </head>
+
+  <body class="pallet02">
+    <!-- NAVIGATION -->
+
+    <section class="block">
+      <div class="navigation">
+        <div class="grid">
+          <div style="background: var(--color-primary)">
+            <a href="home.html">
+              <img src="../../images/Brushes/BrushSmall 01 002.webp" alt="" />
+            </a>
+          </div>
+          <div style="background: var(--color-secondary)"></div>
+          <div style="background: var(--color-tertiary)"></div>
+          <div style="background: var(--color-background)"></div>
+          <div style="background: var(--color-accent)">
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+    TODO:  
+    - Make an svg logo 
+    -->
+
+    <!-- HERO -->
+
+    <!-- 
+    TODO: 
+    - complete your banner source set
+    -->
+
+    <section class="block">
+      <div class="parallax-container">
+        <div class="parallax-layer" data-speed="0.05">
+          <img src="../../images/heros/home/Space_01.webp" />
+        </div>
+
+        <div class="parallax-layer" data-speed="0.2">
+          <img src="../../images/heros/home/Swirls_01.webp" />
+        </div>
+
+        <div class="parallax-layer" data-speed="0.3">
+          <div class="canvas-container">
+            <canvas
+              class="canvas-item pallet02"
+              data-color-source="accent"
+            ></canvas>
+            <img
+              class="source-image"
+              src="../../images/Brushes/Brush 02 002.webp"
+              style="display: none"
+            />
+          </div>
+        </div>
+
+        <div class="parallax-layer" data-speed="0.4">
+          <h1 class="parallax-title">B.<br />Wylie</h1>
+        </div>
+
+        <div class="parallax-layer" data-speed="0.6">
+          <img src="../../images/heros/home/Geometry_01.webp" />
+        </div>
+
+        <div class="parallax-layer" data-speed="0.8">
+          <h1 class="parallax-subtitle">Music</h1>
+        </div>
+
+        <div class="parallax-layer" data-speed="1">
+          <img src="../../images/heros/home/Splatter_01.webp" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+
+    <section>
+      <div class="carousel">
+        <div class="carousel-items">
+          <div class="carousel-item carousel-item-selected">
+            <div class="canvas-container">
+              <canvas class="canvas-item" data-color-source="accent"></canvas>
+              <img
+                class="source-image"
+                src="../../images/Brushes/BrushSmallDark 02 002.webp"
+                style="display: none"
+              />
+            </div>
+            <h1>•Music</h1>
+          </div>
+
+          <a href="film.html">
+            <div class="carousel-item">
+              <img
+                src="../../images/Brushes/BrushSmallDark 03 002.webp"
+                alt=""
+              />
+              <h1>•Film</h1>
+            </div>
+          </a>
+
+          <a href="design.html">
+            <div class="carousel-item">
+              <img
+                src="../../images/Brushes/BrushSmallDark 04 002.webp"
+                alt=""
+              />
+              <h1>•Design</h1>
+            </div>
+          </a>
+
+          <a href="photo.html">
+            <div class="carousel-item">
+              <img
+                src="../../images/Brushes/BrushSmallDark 05 002.webp"
+                alt=""
+              />
+              <h1>•Photo</h1>
+            </div>
+          </a>
+
+          <a href="live.html">
+            <div class="carousel-item">
+              <img
+                src="../../images/Brushes/BrushSmallDark 06 002.webp"
+                alt=""
+              />
+              <h1>•Live</h1>
+            </div>
+          </a>
+
+          <a href="code.html">
+            <div class="carousel-item">
+              <img
+                src="../../images/Brushes/BrushSmallDark 07 002.webp"
+                alt=""
+              />
+              <h1>•Code</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTRIES -->
+
+    <!-- Start: Portfolio Grid -->
+
+    <section>
+      <div class="block block__pad">
+        <div class="container">
+          <div class="grid grid--1x2 grid--1x3 grid--gap">
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Everyone is Everyone And Everything is Everything"
+                data-src="Music Modals/Music - Everyone is Everyone And Everything is Everything.html"
+              >
+                <div class="entry--box entry--feature">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 05.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Everyone is Everyone And Everything is Everything</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div
+              class="modal"
+              id="Music - Everyone is Everyone And Everything is Everything"
+            >
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Everyone is Everyone And Everything is Everything.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Lost Her Way Home"
+                data-src="Music Modals/Music - Lost Her Way Home.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 06.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Lost Her Way Home</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - Lost Her Way Home">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Lost Her Way Home.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - The Propagation of Light Through the Ether of Emotion"
+                data-src="Music Modals/Music - The Propagation of Light Through the Ether of Emotion.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 02.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>The Propagation of Light Through the Ether of Emotion</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div
+              class="modal"
+              id="Music - The Propagation of Light Through the Ether of Emotion"
+            >
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - The Propagation of Light Through the Ether of Emotion.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - So Just Hang On Beautiful One"
+                data-src="Music Modals/Music - So Just Hang On Beautiful One.html"
+              >
+                <div class="entry--box entry--feature">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 09.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>So Just Hang On Beautiful One</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - So Just Hang On Beautiful One">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - So Just Hang On Beautiful One.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - In Three Seconds I’ll Be Gone"
+                data-src="Music Modals/Music - In Three Seconds I’ll Be Gone.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 01.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>In Three Seconds I’ll Be Gone</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - In Three Seconds I’ll Be Gone">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - In Three Seconds I’ll Be Gone.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Forever Dancing Under a Fallen Sky"
+                data-src="Music Modals/Music - Forever Dancing Under a Fallen Sky.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 10.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Forever Dancing Under a Fallen Sky</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - Forever Dancing Under a Fallen Sky">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Forever Dancing Under a Fallen Sky.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Wherever We Begin to Fall"
+                data-src="Music Modals/Music - Wherever We Begin to Fall.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 04.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Wherever We Begin to Fall</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - Wherever We Begin to Fall">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Wherever We Begin to Fall.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - The Empty Gorgeousness of All"
+                data-src="Music Modals/Music - The Empty Gorgeousness of All.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 07.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>The Empty Gorgeousness of All</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - The Empty Gorgeousness of All">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - The Empty Gorgeousness of All.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - These Subtle Lights"
+                data-src="Music Modals/Music - These Subtle Lights.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 11.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>These Subtle Lights</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - These Subtle Lights">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - These Subtle Lights.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Planck Length"
+                data-src="Music Modals/Music - Planck Length.html"
+              >
+                <div class="entry--box entry--feature">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 03.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Planck Length</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - Planck Length">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Planck Length.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Over the Edge It Goes"
+                data-src="Music Modals/Music - Over the Edge It Goes.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/And Down Goes The Sky/Entry 08.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Over the Edge It Goes</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - Over the Edge It Goes">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Over the Edge It Goes.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - London Grammar - Strong [Au4 Remix]"
+                data-src="Music Modals/Music - London Grammar - Strong [Au4 Remix].html"
+              >
+                <div class="entry--box entry--feature">
+                  <img
+                    src="../../Portfolio/Music/London Grammer Remix/Entry.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>London Grammar - Strong [Au4 Remix]</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - London Grammar - Strong [Au4 Remix]">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - London Grammar - Strong [Au4 Remix].html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Hit and Miss"
+                data-src="Music Modals/Music - Hit and Miss.html"
+              >
+                <div class="entry--box entry--feature">
+                  <img
+                    src="../../Portfolio/Music/On Audio/Entry 03.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Hit and Miss</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - Hit and Miss">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Hit and Miss.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - A Mile from Here is a Hole Where I Buried Your Love"
+                data-src="Music Modals/Music - A Mile from Here is a Hole Where I Buried Your Love.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/On Audio/Entry 02.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>A Mile from Here is a Hole Where I Buried Your Love</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div
+              class="modal"
+              id="Music - A Mile from Here is a Hole Where I Buried Your Love"
+            >
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - A Mile from Here is a Hole Where I Buried Your Love.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Everything Always Moving"
+                data-src="Music Modals/Music - Everything Always Moving.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/On Audio/Entry 04.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Everything Always Moving</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - Everything Always Moving">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Everything Always Moving.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - An Ocean’s Measure of Sorrow"
+                data-src="Music Modals/Music - An Ocean’s Measure of Sorrow.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/On Audio/Entry 09.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>An Ocean’s Measure of Sorrow</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - An Ocean’s Measure of Sorrow">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - An Ocean’s Measure of Sorrow.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - The Tree That Lived and Died Right Before My Eyes"
+                data-src="Music Modals/Music - The Tree That Lived and Died Right Before My Eyes.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/On Audio/Entry 08.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>The Tree That Lived and Died Right Before My Eyes</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div
+              class="modal"
+              id="Music - The Tree That Lived and Died Right Before My Eyes"
+            >
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - The Tree That Lived and Died Right Before My Eyes.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Paper Cuts from Paper Butterflies"
+                data-src="Music Modals/Music - Paper Cuts from Paper Butterflies.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/On Audio/Entry 06.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Paper Cuts from Paper Butterflies</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - Paper Cuts from Paper Butterflies">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Paper Cuts from Paper Butterflies.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Undone by Dandelions"
+                data-src="Music Modals/Music - Undone by Dandelions.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/On Audio/Entry 07.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Undone by Dandelions</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - Undone by Dandelions">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Undone by Dandelions.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - Of Dreams"
+                data-src="Music Modals/Music - Of Dreams.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/On Audio/Entry 01.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Of Dreams</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Music - Of Dreams">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - Of Dreams.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Music - One Thousand Rivers Flowing Further and Further Away"
+                data-src="Music Modals/Music - One Thousand Rivers Flowing Further and Further Away.html"
+              >
+                <div class="entry--box">
+                  <img
+                    src="../../Portfolio/Music/On Audio/Entry 05.webp"
+                    alt=""
+                  />
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>One Thousand Rivers Flowing Further and Further Away</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div
+              class="modal"
+              id="Music - One Thousand Rivers Flowing Further and Further Away"
+            >
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div
+                  class="modal-body"
+                  data-src="Music Modals/Music - One Thousand Rivers Flowing Further and Further Away.html"
+                ></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End: Portfolio Grid -->
+
+    <!-- NAVIGATION -->
+
+    <section class="block">
+      <div class="navigation">
+        <div class="grid">
+          <div style="background: var(--color-primary)"></div>
+          <div style="background: var(--color-secondary)"></div>
+          <div style="background: var(--color-tertiary)"></div>
+          <div style="background: var(--color-background)"></div>
+          <div style="background: var(--color-accent)">
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+
+    <script type="module" src="../01-main/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script></script>
+
+    <!-- End -->
+  </body>
+</html>

@@ -1,0 +1,56 @@
+.socials {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the grid as a whole */
+}
+
+.socials .grid {
+    display: flex;
+    justify-content: center; /* Center all icons as a group */
+    align-items: center;
+    flex-wrap: wrap; /* Ensures icons wrap properly if needed */
+    gap: 20px; /* Adds spacing between icons */
+    width: auto; /* Allows grid to dynamically resize */
+    max-width: 800px; /* Prevents stretching too wide */
+}
+
+.socials a {
+    flex: 1 1 auto; /* Allows icons to scale dynamically */
+    min-width: 60px; /* Ensures they don’t get too small */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: var(--color-primary);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+/* Assign masks to the links instead of images */
+.socials a.itunes {
+    -webkit-mask-image: url("../../images/socials/itunes.svg");
+    mask-image: url("../../images/socials/itunes.svg");
+}
+
+.socials a.spotify {
+    -webkit-mask-image: url("../../images/socials/spotify.svg");
+    mask-image: url("../../images/socials/spotify.svg");
+}
+
+.socials a.youtube {
+    -webkit-mask-image: url("../../images/socials/youtube.svg");
+    mask-image: url("../../images/socials/youtube.svg");
+}
+
+/* Remove images since they are unnecessary */
+.socials img {
+    display: none;
+}
+
+/* Hover Effect */
+.socials a:hover {
+    background-color: var(--color-accent);
+}

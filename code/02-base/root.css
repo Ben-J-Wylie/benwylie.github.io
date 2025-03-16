@@ -1,0 +1,66 @@
+/* ROOT */
+
+/* Color pallet generation: https://coolors.co/ */
+
+:root {
+    --color-background: #E2E2DF;
+
+    --color-primary: #222222;
+    --color-secondary: #4c5657;
+    --color-tertiary: #8a9293;
+
+    --color-selection: #b9b9b8;
+ 
+    --color-border: #ccc;
+    --border-radius: 100px;
+
+    --min-width-desktop: 1024px;
+    --min-width-tablet: 768px;
+}
+
+
+body.pallet01 {
+    --color-accent: #b0182f;
+}
+
+body.pallet02 {
+    --color-accent: #fd0054;
+}
+
+body.pallet03 {
+    --color-accent: #ee4b00;
+}
+
+body.pallet04 {
+    --color-accent: #ffbb00;
+}
+
+body.pallet05 {
+    --color-accent: #00a503;
+}
+
+body.pallet06 {
+    --color-accent: #006bcf;
+}
+
+body.pallet07 {
+    --color-accent: #9d00b5;
+}
+
+
+/* Load flash fix */
+
+body {
+    opacity: 0;
+    background-color: var(--color-background); 
+    transition: opacity 0.2s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+
+
+/* UNIVERSAL SELECTOR */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+} 
+

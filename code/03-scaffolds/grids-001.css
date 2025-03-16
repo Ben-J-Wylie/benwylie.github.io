@@ -1,0 +1,32 @@
+/* GRIDS */
+
+/* This is like how many units can fit in one story */
+
+   /* Mobile */
+
+.grid {
+    display: grid;
+}
+
+.grid--gap {
+    gap: 20px;
+}
+
+    /* Tablet */
+
+@media screen and (min-width: 600px) {
+     .grid--1x2 {
+         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
+
+    /* Desktop */
+
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+   }
+}
+
+
+

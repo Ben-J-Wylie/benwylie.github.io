@@ -1,0 +1,112 @@
+/* Modals */
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh; /* Use dynamic viewport height */
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Close Button (Fixed at Top in Dark Space) */
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 3100;
+    background: none;
+    border: none;
+    padding: 10px;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* When modal is active, show it */
+.modal.active {
+    display: flex;
+}
+
+.modal-close:hover {
+    color: var(--color-accent);
+}
+
+/* Modal Content (Centered & Resizable) */
+.modal-content {
+    background: var(--color-background);
+    background-image: url(../../images/paper.webp);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Takes available space */
+    min-height: 45vh; /* Ensures content doesn't get too small */
+    max-height: var(--modal-max-height, 80vh); /* Dynamically set via JS */
+    
+    margin-bottom: 20px; /* Creates extra gap between content and buttons */
+}
+
+/* Scrollable Content (Only This Shrinks) */
+.modal-body {
+    flex-grow: 1; /* Only this section collapses */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    padding-bottom: 20px; /* Avoids content touching the bottom */
+    min-height: 20vh; /* Ensures it never disappears */
+    max-width: 100%; /* Ensures content does not exceed container width */
+    word-wrap: break-word; /* Prevents long words from causing overflow */
+}
+
+.modal-body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Next/Prev Buttons (Fixed at Bottom in Dark Space) */
+.modal-buttons {
+    position: absolute;
+    bottom: var(--modal-button-spacing, 20px); /* Dynamic spacing via JS */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 5100;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Prev/Next Button Styles */
+.prev, .next {
+    background: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.prev:hover, .next:hover {
+    background: var(--color-accent);
+}
+

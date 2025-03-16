@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+    <link rel="stylesheet" href="../01-main/main.css" />
+  </head>
+  <body style="padding: 2rem">
+    <!-- Component -->
+
+    <!-- Video Player -->
+    <video
+      id="my-video"
+      class="video-js"
+      controls
+      preload="auto"
+      poster="../../images/bg-paper.jpg"
+      data-setup="{}"
+    >
+      <source src="../../images/Big Shot 04.mp4" type="video/mp4" />
+      <source src="MY_VIDEO.webm" type="video/webm" />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+    </video>
+
+    <!-- Audio Player -->
+    <audio
+      id="my-audio"
+      class="video-js audio-player"
+      controls
+      preload="auto"
+      poster="../../images/bg-paper.jpg"
+      data-setup="{}"
+    >
+      <source src="../../images/Just Hang On.mp3" type="audio/mp3" />
+      <source src="../../audio/song.ogg" type="audio/ogg" />
+      <p class="vjs-no-js">
+        To listen to this audio, please enable JavaScript, and consider
+        upgrading to a web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 audio</a
+        >
+      </p>
+    </audio>
+
+    <!-- JS -->
+
+    <script type="module" src="../01-main/main.js"></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+
+    <!-- End -->
+  </body>
+</html>

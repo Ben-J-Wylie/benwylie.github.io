@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modals</title>
+    <link rel="stylesheet" href="../01-main/main.css" />
+  </head>
+  <body class="pallet01" style="padding: 2rem">
+    <!-- ENTRIES -->
+
+    <!-- Start: Portfolio Grid -->
+
+    <section>
+      <div class="block block__pad">
+        <div class="container">
+          <div class="grid grid--1x2 grid--1x3 grid--gap">
+            <!-- Start: Entry -->
+
+            <div class="entry">
+              <a
+                class="openModal"
+                data-modal-id="Sourced Modal"
+                data-src="modalSource.html"
+              >
+                <div class="entry--box">
+                  <div class="entry--multiply">
+                    <img
+                      style="transform: scale(1) translate(0px, 0px)"
+                      src="../../Portfolio/Film/Appix/Appix Anywhere.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </a>
+
+              <div class="entry--title">
+                <h2>Sourced Modal</h2>
+              </div>
+            </div>
+
+            <!-- Start: Modal Overlay -->
+
+            <div class="modal" id="Sourced Modal">
+              <button class="modal-close">&times;</button>
+              <div class="modal-content">
+                <div class="modal-body" data-src="modalSource.html"></div>
+              </div>
+
+              <div class="modal-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+
+            <!-- End: Modal Overlay-->
+
+            <!-- End: Entry -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End: Portfolio Grid -->
+
+    <!-- JS -->
+
+    <script type="module" src="../01-main/main.js"></script>
+    <script type="module" src="../05-components/gallery-001.js"></script>
+    <script type="module" src="../06-structures/modals-004.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- End -->
+  </body>
+</html>

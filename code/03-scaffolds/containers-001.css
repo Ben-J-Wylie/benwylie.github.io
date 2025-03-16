@@ -1,0 +1,10 @@
+/* CONTAINERS */
+
+/* This is like how thick the walls are on the outer parimiter of the entire apartment story */
+
+   /* Mobile */
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto; /* Centers the container horizontally */
+}
