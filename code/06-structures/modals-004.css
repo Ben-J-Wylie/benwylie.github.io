@@ -2,7 +2,7 @@
 
 /* Modals */
 .modal {
-    display: none;
+    display: none !important; /* Prevent unwanted display */
     position: fixed;
     top: 0;
     left: 0;
@@ -13,6 +13,10 @@
     align-items: center;
     z-index: 3000;
     flex-direction: column; /* Stack elements vertically */
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
 }
 
 /* Close Button (Fixed at Top in Dark Space) */
@@ -31,8 +35,10 @@
 }
 
 /* When modal is active, show it */
-.modal.active {
-    display: flex;
+.modal.open {
+    display: flex !important; /* Only show when explicitly opened */
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal-close:hover {

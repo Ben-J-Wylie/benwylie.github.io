@@ -47,17 +47,30 @@
     <section class="block">
       <div class="navigation">
         <div class="grid grid--1x5">
-          <div style="background: var(--color-primary)">
-            <a href="home.html">
-              <img src="../../images/Brushes/BrushSmall 01 002.webp" alt="" />
-            </a>
-          </div>
+          <div style="background: var(--color-primary)"></div>
           <div style="background: var(--color-secondary)"></div>
           <div style="background: var(--color-tertiary)"></div>
           <div style="background: var(--color-background)"></div>
           <div style="background: var(--color-accent)">
-            <a href="#">Contact</a>
+            <a
+              class="openModal"
+              data-modal-id="Contact-Modal2"
+              data-src="Contact Modals/Contact.html"
+            >
+              Contact
+            </a>
           </div>
+          <!-- Start: Contact Modal Overlay -->
+          <div class="modal" id="Contact-Modal2">
+            <button class="modal-close">&times;</button>
+            <div class="modal-content">
+              <div
+                class="modal-body"
+                data-src="Contact Modals/Contact.html"
+              ></div>
+            </div>
+          </div>
+          <!-- End: Contact Modal Overlay -->
         </div>
       </div>
     </section>
@@ -245,8 +258,25 @@
           <div style="background: var(--color-tertiary)"></div>
           <div style="background: var(--color-background)"></div>
           <div style="background: var(--color-accent)">
-            <a href="#">Contact</a>
+            <a
+              class="openModal"
+              data-modal-id="Contact-Modal"
+              data-src="Contact Modals/Contact.html"
+            >
+              Contact
+            </a>
           </div>
+          <!-- Start: Contact Modal Overlay -->
+          <div class="modal" id="Contact-Modal">
+            <button class="modal-close">&times;</button>
+            <div class="modal-content">
+              <div
+                class="modal-body"
+                data-src="Contact Modals/Contact.html"
+              ></div>
+            </div>
+          </div>
+          <!-- End: Contact Modal Overlay -->
         </div>
       </div>
     </section>
