@@ -51,6 +51,9 @@ input, textarea {
     border-radius: 5px;
     border: 1px solid var(--color-tertiary);
     margin: 10px 0px;
+
+    
+    font-size: 16px;
     
     /* Inherit paragraph styles for user input */
     font-family: inherit;
