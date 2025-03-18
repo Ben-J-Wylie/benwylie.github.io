@@ -7,13 +7,23 @@
     
 }
 
+.navigation .grid div {
+    flex: 1;
+}
+
 .navigation-pad {
     padding: 10px 20px;
     text-align: center;
 }
 
-.navigation .grid div {
-    flex: 1;
+.navigation-home {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navigation-home:hover {
+    color: var(--color-accent); 
+    cursor: pointer;
 }
 
 .navigation a {
@@ -27,3 +37,4 @@
 .navigation a:hover {
     color: var(--color-primary);
 }
+
