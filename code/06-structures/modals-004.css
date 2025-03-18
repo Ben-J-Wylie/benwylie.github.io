@@ -77,7 +77,6 @@
     flex-grow: 1; /* Only this section collapses */
     overflow-y: auto; /* Enables vertical scrolling */
     overflow-x: hidden; /* Prevents horizontal scrolling */
-    padding-bottom: 20px; /* Avoids content touching the bottom */
     min-height: 20vh; /* Ensures it never disappears */
     max-width: 100%; /* Ensures content does not exceed container width */
     word-wrap: break-word; /* Prevents long words from causing overflow */

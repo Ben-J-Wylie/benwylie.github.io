@@ -4,28 +4,25 @@
 
 .navigation .grid {
     display: flex;
+    
+}
+
+.navigation-pad {
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .navigation .grid div {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box; /* Ensures padding increases height */
-    padding: 10px 30px; /* Padding now increases height */
 }
 
 .navigation a {
     color: var(--color-background);
     font-weight: regular;
     text-transform: uppercase;
+    
 }
 
-.navigation img {
-    position: relative;
-    width: 20%;
-    height: 20%;
-}
 
 .navigation a:hover {
     color: var(--color-primary);
