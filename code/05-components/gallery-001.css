@@ -71,19 +71,6 @@
     object-fit: contain;
 }
 
-.gallery-image picture {
-    display: flex; /* Ensures it behaves like a block element */
-    height: 100%; /* Matches the parent container */
-    width: auto; /* Ensures the aspect ratio is maintained */
-    justify-content: center; /* Centers content */
-    align-items: center;
-}
-
-.gallery-image picture img {
-    height: 100%; /* Ensures the image fills the available space */
-    width: auto; /* Maintains aspect ratio */
-    object-fit: contain; /* Prevents cropping */
-}
 
 /* 🔹 imageLong: Scales Down as Screen Shrinks */
 .gallery-imageLong {
