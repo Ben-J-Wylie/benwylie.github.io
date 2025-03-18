@@ -17,9 +17,12 @@
 }
 
 .navigation-home {
-    padding: 10px 20px;
-    text-align: center;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure it takes up full width */
+    height: 100%; /* Ensures centering vertically */
+  }
 
 .navigation-home:hover {
     color: var(--color-accent); 
