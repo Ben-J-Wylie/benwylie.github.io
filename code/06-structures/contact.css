@@ -1,23 +1,113 @@
-
-  .contact-container {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  input,
-  textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  /* contact-button {
-    background: blue;
-    color: white;
+
+  .contact-content {
+    margin-bottom: 0px;
+  }
+
+  .contact-button {
+    background: var(--color-primary);
+    border-radius: 5px;
     border: none;
-    padding: 10px;
+    padding: 10px 0px;
     cursor: pointer;
     width: 100%;
+  }
+
+  .contact-button h2 {
+    color: var(--color-background);
+  }
+
+  button, button h2 {
+    all: unset; /* Removes default button styles */
+    display: inline-block; /* Ensures proper layout */
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+    color: inherit;
+    text-align: inherit;
+}
+
+/* Reset input fields to inherit global typography */
+input, textarea {
+    all: unset; /* Removes default browser styles */
+    display: block; /* Ensures proper layout */
+    width: 100%; /* Optional: Makes inputs stretch to container width */
+    max-width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    margin: 0; /* Resets any default margins */
+    padding: 10px; /* Adjust padding as needed */
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid var(--color-tertiary);
+    margin: 10px 0px;
+    
+    /* Inherit paragraph styles for user input */
+    font-family: inherit;
+    font-size: 1rem; /* Matches p */
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0em; /* Matches p */
+    line-height: 1.5; /* Matches p */
+    text-transform: none; /* Matches p */
+    color: inherit; /* Use body text color */
+    text-align: left;
+}
+
+/* Make placeholder text inherit h3 styles */
+input::placeholder, textarea::placeholder {
+    font-family: inherit;
+    font-size: 1rem; /* Matches h3 */
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.4rem; /* Matches h3 */
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--color-primary); /* Same as h3 */
+    text-align: left;
+    opacity: 0.6; /* Optional: Adjust visibility of placeholder */
+}
+
+  
+  
+
+
+   /* .contact-container {
+    display: flex;
+    flex-direction: column;
+    height: var(--modal-max-height);
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    flex-grow: 1; /* Allows the textarea to expand 
+    resize: none; 
+  }*/
+  
+  /* .contact-button {
+    margin-top: auto; 
+    padding: 10px;
+    text-align: center;
   } */

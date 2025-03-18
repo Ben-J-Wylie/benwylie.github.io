@@ -27,6 +27,7 @@ import "../05-components/gallery-001.js"
 import "../06-structures/modals-004.js"
 import "../06-structures/parallax-001.js"
 import "../06-structures/carousel-001.js"
+import "../06-structures/contact.js"
 
 
 /* Sandbox */
