@@ -1,0 +1,10 @@
+.blurb {
+    max-width: 720px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.blurb h1 {
+    font-size: 4rem;
+}

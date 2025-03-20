@@ -102,8 +102,8 @@
 
 /* Prev/Next Button Styles */
 .prev, .next {
-    background: var(--color-primary);
-    color: var(--color-background);
+    background: var(--color-background);
+    color: var(--color-primary);
     border: none;
     padding: 10px 20px;
     cursor: pointer;

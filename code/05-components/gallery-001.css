@@ -23,8 +23,8 @@
     flex-wrap: nowrap;
     gap: 20px;
     min-width: fit-content;
-    margin: auto; /* ✅ Centers by default if smaller than the gallery */
-    justify-content: flex-start; /* ✅ Ensures left alignment when overflowing */
+    margin: auto;
+    justify-content: flex-start; 
 }
 
 
@@ -53,6 +53,38 @@
         transform: none !important;
     }
 }
+
+.gallery-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.gallery-hero img {
+    width: 100%; /* ✅ Ensures it fits the hero element */
+    height: 100%; /* ✅ Ensures it fits the hero element */
+    /* max-width: 100%;
+    max-height: 100%; */
+    border: none;
+    object-fit: contain; /* ✅ Ensures full visibility without cropping */
+}
+
+
+.gallery-hero iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    aspect-ratio: 16 / 9; /* ✅ Ensures it scales properly */
+    object-fit: contain; /* ✅ Prevents cropping while maintaining aspect ratio */
+}
+
 
 /* 🔹 Images */
 .gallery-image {
@@ -88,18 +120,18 @@
     max-width: 720px; /* Ensures it never exceeds this */
 }
 
-/* 🔹 Videos */
+
 .gallery-video {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: 100%; /* Fit gallery height */
     overflow: visible !important;
 }
 
-.gallery-video video {
-    height: 100%; /* Fit gallery height */
+.gallery-video iframe {
+    max-height: 100%; /* Fit within gallery */
     width: auto; /* Maintain aspect ratio */
     object-fit: contain;
 }
