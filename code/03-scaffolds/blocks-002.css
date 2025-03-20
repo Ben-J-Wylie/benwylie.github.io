@@ -10,8 +10,8 @@
 }
 
 .block__pad {
-    --padding-vertical: 4rem;
-    padding: var(--padding-vertical) 3rem;
+
+    padding: 0 3rem 8rem 3rem;
 }
 
 /* .block__header {

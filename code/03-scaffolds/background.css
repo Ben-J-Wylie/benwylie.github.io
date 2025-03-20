@@ -1,0 +1,16 @@
+
+
+.background {
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+    background-image: 
+        url(../../images/heros/home/Geometry_Top.webp), /* First image for the top */
+        url(../../images/heros/home/Geometry_Bottom.webp); /* Second image for the bottom */
+    background-position: top center, bottom center; /* Align the first image to the top and the second to the bottom */
+    background-size: contain, contain; /* Ensure both images cover their respective areas */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+}

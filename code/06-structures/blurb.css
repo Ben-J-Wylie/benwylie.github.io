@@ -1,13 +1,15 @@
 .blurb {
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
-    background-image: url(../../images/heros/home/Geometry_01.webp); /* Set your background image path here */
-    background-position: center top; /* Align the image to the top-center */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    display: flex; /* Enables flexbox layout */
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
+    /* width: 100%; 
+    height: auto; 
+    background-image: 
+        url(../../images/heros/home/Geometry_Top.webp), 
+        url(../../images/heros/home/Geometry_Bottom.webp); 
+    background-position: top center, bottom center;
+    background-size: contain, contain; 
+    background-repeat: no-repeat; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  */
 }
 
 .blurb-content {
