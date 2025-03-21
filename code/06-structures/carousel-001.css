@@ -1,6 +1,6 @@
 .carousel {
     width: 100%;
-    height: 140px;
+    height: 100px;
     padding: 8px 0;
 
     position: sticky;
@@ -50,7 +50,7 @@
     flex-direction: column; /* Stack image and text */
     align-items: center; /* Center align contents */
     text-align: center;
-    min-width: 200px; /* Adjust size as needed */
+    min-width: 150px; /* Adjust size as needed */
     transition: transform .2s ease-out;
 }
 
@@ -63,7 +63,7 @@
 /* Images should maintain their aspect ratio */
 .carousel-item img,
 .carousel-item .canvas-container {
-    width: 45%; /* Ensures consistency inside the carousel */
+    width: 35%; /* Ensures consistency inside the carousel */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain;
 }
@@ -71,6 +71,7 @@
 /* Text below each image */
 .carousel-item h1 {
     margin-top: 8px;
+    font-size: 1rem;
     white-space: nowrap;
 }
 
