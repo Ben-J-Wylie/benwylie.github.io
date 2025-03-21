@@ -27,22 +27,10 @@
     justify-content: center;
     align-items: center;
 
-    /* opacity: 0;
-    transition: opacity 0.1s ease-in-out; */
+  
 }
 
-/* .loaded .parallax-layer {
-    opacity: 1; 
-} */
 
-/* @keyframes fadeBackground {
-    0% {
-        background: var(--color-primary);
-    }
-    100% {
-        background: var(--color-background);
-    }
-}  */
 
 
 /* Parallax Images */
