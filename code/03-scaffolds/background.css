@@ -13,4 +13,5 @@
     flex-direction: column; /* Stacks child elements vertically */
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
+
 }

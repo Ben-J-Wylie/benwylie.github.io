@@ -56,7 +56,8 @@
 
 
 .carousel-item:not(.carousel-item-selected):hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
+    color: var(--color-accent);
 }
 
 

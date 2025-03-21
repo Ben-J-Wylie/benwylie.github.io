@@ -1,20 +1,10 @@
 .blurb {
-    /* width: 100%; 
-    height: auto; 
-    background-image: 
-        url(../../images/heros/home/Geometry_Top.webp), 
-        url(../../images/heros/home/Geometry_Bottom.webp); 
-    background-position: top center, bottom center;
-    background-size: contain, contain; 
-    background-repeat: no-repeat; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;  */
+ 
 }
 
 .blurb-content {
     max-width: 720px;
-    margin: 0 auto; /* Centers the element horizontally */
+    margin: 8rem 0rem 0rem 0rem; /* Centers the element horizontally */
     padding: 30px;
     display: flex; /* Enables flexbox layout */
     flex-direction: column; /* Stacks child elements vertically */
@@ -28,4 +18,9 @@
 .blurb-content p {
     text-align: justify; /* Justifies text so it's spread across the container */
     text-align-last: left; /* Ensures the last line is left-aligned */
+}
+
+.blurb-content img {
+    display: flex;
+    width: 100%;
 }
