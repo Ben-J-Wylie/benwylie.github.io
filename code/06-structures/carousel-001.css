@@ -92,13 +92,13 @@
     position: absolute;
     top: 50%; /* Position them vertically centered */
     transform: translateY(-50%); /* Adjust for exact centering */
-    width: 20px; /* Set smaller width */
-    height: 20px; /* Set smaller height */
+    width: 15px; /* Set smaller width */
+    height: 100px; /* Set smaller height */
     
     background-size: contain;
     background-repeat: no-repeat;
     
-    z-index: 1001; /* Ensure chevrons sit on top of the carousel */
+    z-index: 1000; /* Ensure chevrons sit on top of the carousel */
     cursor: pointer;
     opacity: 0; /* Initially invisible */
     pointer-events: none; /* Disabled for now */
@@ -106,12 +106,12 @@
 }
 /* Left Chevron */
 .chevron-left {
-    left: 2px; /* Position it on the left side of the container */
+    left: 0px; /* Position it on the left side of the container */
     background-image: url(../../images/left.webp); /* Replace with your left chevron image URL */
 }
 
 /* Right Chevron */
 .chevron-right {
-    right: 2px; /* Position it on the right side of the container */
+    right: 0px; /* Position it on the right side of the container */
     background-image: url(../../images/right.webp); /* Replace with your right chevron image URL */
 }
