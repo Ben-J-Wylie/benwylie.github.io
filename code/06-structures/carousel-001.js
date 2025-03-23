@@ -67,6 +67,10 @@
 // });
 
 
+
+
+// ADDED CHEVRONS
+
 document.addEventListener("DOMContentLoaded", function () {
     const carouselContainer = document.querySelector(".carousel-container"); // Change to .carousel-container
     const carousel = document.querySelector(".carousel");

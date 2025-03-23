@@ -45,6 +45,18 @@
     color: var(--color-accent);
 }
 
+/* Carousel Container */
+.modal-container {
+    position: relative; /* Ensure chevrons are positioned relative to this container */
+    width: 90%; /* Ensure container fills the width */
+    overflow: hidden; /* Prevents content from overflowing outside the container */
+    display: flex; /* Use flexbox to center content inside */
+    justify-content: center; /* Center the carousel horizontally */
+    align-items: center; /* Align content vertically */
+    overflow: visible;
+    padding: 0px;
+}
+
 /* Modal Content (Centered & Resizable) */
 .modal-content {
     background: var(--color-background);
@@ -115,24 +127,24 @@
 }
 
 
-/* Chevron Indicator (Sits at Bottom of .modal-content) */
-.modal-chevron {
-    width: 100%;
-    height: 15px;
-    background-color: blueviolet;
+.chevron-down {
     position: absolute;
-    bottom: 10px; /* Align with padding */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    color: var(--color-primary);
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    z-index: 5100; /* Ensure it’s on top */
-    pointer-events: none; /* Prevent accidental clicks */
-}
+    bottom: 20px; /* ✅ Keeps it inside the padding of .modal-content */
+    left: 50%; /* ✅ Start centering */
+    transform: translateX(-50%); /* ✅ Perfect center alignment */
+    
+    width: calc(100% - 40px); /* ✅ Takes full width minus padding (20px on each side) */
+    height: 15px; /* ✅ Fixed height */
 
-/* Hide chevron when at bottom */
-.modal-chevron.hidden {
-    opacity: 0;
+    background-color: var(--color-primary); /* ✅ Background color */
+    background-image: url(../../images/chevron-down.svg); /* ✅ Add your image */
+    background-size: contain; /* ✅ Ensures image fits */
+    background-repeat: no-repeat;
+    background-position: center; /* ✅ Centers image */
+
+    z-index: 4000; /* ✅ Ensure it sits above modal content */
+    cursor: pointer;
+    opacity: 0; /* ✅ Initially hidden */
+    pointer-events: none; /* ✅ Disable interaction initially */
+    transition: opacity 0.2s ease;
 }

@@ -95,8 +95,10 @@
     width: 15px; /* Set smaller width */
     height: 100px; /* Set smaller height */
     
-    background-size: contain;
+    background-color: var(--color-primary); /* ✅ Background color */
+    background-size: contain; /* ✅ Ensures image fits */
     background-repeat: no-repeat;
+    background-position: center; /* ✅ Centers image */
     
     z-index: 1000; /* Ensure chevrons sit on top of the carousel */
     cursor: pointer;
@@ -107,11 +109,11 @@
 /* Left Chevron */
 .chevron-left {
     left: 0px; /* Position it on the left side of the container */
-    background-image: url(../../images/left.webp); /* Replace with your left chevron image URL */
+    background-image: url(../../images/chevron-left.svg); /* Replace with your left chevron image URL */
 }
 
 /* Right Chevron */
 .chevron-right {
     right: 0px; /* Position it on the right side of the container */
-    background-image: url(../../images/right.webp); /* Replace with your right chevron image URL */
+    background-image: url(../../images/chevron-right.svg); /* Replace with your right chevron image URL */
 }
